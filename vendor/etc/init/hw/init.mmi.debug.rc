@@ -1,0 +1,2 @@
+on boot && property:ro.boot.adb_early=1
+    start mmi-usb-sh
