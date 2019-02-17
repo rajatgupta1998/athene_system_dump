@@ -1,0 +1,12 @@
+libqti-perfd-client.so
+libadsprpc.so
+libcdsprpc.so
+libsdsprpc.so
+libqvrservice_client.so
+libvraudio_client.so
+libqvrcamera_client.so
+
+# Motorola SLPC-related
+libmodalityservice_jni.so
+libsensorhubservice_jni.so
+
