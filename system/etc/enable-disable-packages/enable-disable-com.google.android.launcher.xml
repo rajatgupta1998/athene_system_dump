@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (C) 2018 Motorola Mobility Inc.
+    All Rights Reserved.
+    Motorola Mobility Confidential Restricted.
+-->
+<!-- Remove GooogleNowLauncher updates -->
+<enable-disable-package>
+    <package-disable-enable-criteria
+        package="com.google.android.launcher"
+        systemOnly="false"
+        default_action="remove">
+    </package-disable-enable-criteria>
+
+    <!-- Explicitly disable GEL. there is too much latency with GoogleApp
+         disabling this activity -->
+    <package-disable-enable-criteria
+        component="com.google.android.googlequicksearchbox/com.google.android.launcher.GEL"
+        systemOnly="true"
+        default_action="disable">
+    </package-disable-enable-criteria>
+</enable-disable-package>
